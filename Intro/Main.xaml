@@ -49,7 +49,7 @@
   </TextExpression.ReferencesForImplementation>
   <Flowchart sap:VirtualizedContainerService.HintSize="614.4,636.8" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
-      <Variable x:TypeArguments="x:String" Default="This Mostafa Awad to world!" Name="myMessage" />
+      <Variable x:TypeArguments="x:String" Default="This {x} saying hello to the world!" Name="myMessage" />
     </Flowchart.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -90,7 +90,7 @@
           <OutArgument x:TypeArguments="x:String">[myMessage]</OutArgument>
         </Assign.To>
         <Assign.Value>
-          <InArgument x:TypeArguments="x:String">[myMessage.Replace("Awad","Mohamed Awad Youssef Moawad")]</InArgument>
+          <InArgument x:TypeArguments="x:String">[myMessage.Replace("{x}","Mostafa Awad")]</InArgument>
         </Assign.Value>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
